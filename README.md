@@ -2,6 +2,15 @@
 
 There have been plenty articles related on how to work with GPIO on Raspberry Pi or Jetson Nano, this project is trying to focus on how to simplify things and write portable programs to run on multiple systems.
 
+We'll build a simply led circuit connected by a transistor with the base plugged into a GPIO pin for our programs to control.
+
+3 programming languages (script) will be used:
+1. C programming language
+2. Python programming language, and
+3. Bash script
+
+Each of the above programs will be used to control the led circuit on both Raspberry Pi and Jetson Nano systems to demo how to write a portable program for multiple systems.
+
 ## 1. System configurations:
 #### Raspberry Pi 4 Model B Rev 1.2 2019 
 * Quad Core ARM 64 Bit WiFi Bluetooth (4GB) (with Linux raspberrypi 4.19.97-v7l+)
