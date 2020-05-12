@@ -11,6 +11,12 @@ We'll build a simply led circuit connected by a transistor with the base plugged
 
 Each of the above programs will be used to control the led circuit on both Raspberry Pi and Jetson Nano systems to demo how to write a portable program for multiple systems.
 
+![Tow Systems](TwoSystems.jpg)
+
+[[TwoSystems.jpg | width=200px | atl=Bridge]]
+
+[[https://github.com/huobur/GPIO-Portable-Code/blob/Start/TwoSystems.jpg|width=200px]]
+
 ## 1. System configurations:
 #### Raspberry Pi 4 Model B Rev 1.2 2019 
 * Quad Core ARM 64 Bit WiFi Bluetooth (4GB) (with Linux raspberrypi 4.19.97-v7l+)
