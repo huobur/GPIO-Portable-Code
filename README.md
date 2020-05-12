@@ -18,4 +18,11 @@ Both systems are configured for SSH and VNC access through WiFi, such that they 
 
 Host PC is a Windows 10 machine
 TightVNC (v0.51.0) is installed and configured
-VSCode (v1.45.0) is installed with Remote-SSH extension added
+VSCode (v1.45.0) is installed
+Remote-SSH (v0.51.0) extension is added to VSCode
+
+With the above configurations, I can simply access either of Raspberry Pi or Jetson Nano or both of through my PC in the following 3 methods:
+a. Through a commandline SSH;
+b. Through VSCode via Remote-SSH;
+c. Through TightVNC when absolutely needed.
+
