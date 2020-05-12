@@ -13,9 +13,6 @@ Each of the above programs will be used to control the led circuit on both Raspb
 
 ![Tow Systems](TwoSystems.jpg)
 
-[[TwoSystems.jpg | width=200px | atl=Bridge]]
-
-[[https://github.com/huobur/GPIO-Portable-Code/blob/Start/TwoSystems.jpg|width=200px]]
 
 ## 1. System configurations:
 #### Raspberry Pi 4 Model B Rev 1.2 2019 
