@@ -11,8 +11,11 @@ We'll build a simply led circuit connected by a transistor with the base plugged
 
 Each of the above programs will be used to control the led circuit on both Raspberry Pi and Jetson Nano systems to demo how to write a portable program for multiple systems.
 
-![TowSystems](TwoSystems.jpg)
+![TowSystems](TwoSystems.jpg&raw=true "Fig. 1")
 
+<br>
+<img height="400" width="300" src="TwoSystems.jpg" />
+<br>
 
 ## 1. System configurations:
 #### Raspberry Pi 4 Model B Rev 1.2 2019 
