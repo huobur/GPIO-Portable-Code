@@ -62,7 +62,7 @@ Note that the above components are for building two identical circuits for both 
 
 <br>
 <h2>Fig. 2 LED Circuit Diagram</h2>
-<img height="600" width="368" src="https://github.com/huobur/GPIO-Portable-Code/blob/Start/LEDcircuit.jpg" />
+<img height="368" width="600" src="https://github.com/huobur/GPIO-Portable-Code/blob/Start/LEDcircuit.jpg" />
 <br>
 
 # 3. Software Design
@@ -561,12 +561,12 @@ I also noticed another issue: if one doesn't cleanup before exit, you'll get an 
 ## Appendix - System Configuration Images
 <br>
 <h2>Fig. 3 Raspberry Pi</h2>
-<img height="600" width="450" src="RaspberryPi.jpg" />
+<img height="600" width="600" src="RaspberryPi.jpg" />
 <br>
 
 <br>
 <h2>Fig. 4 Jetson Nano</h2>
-<img height="600" width="450" src="JetsonNano.jpg" />
+<img height="450" width="600" src="JetsonNano.jpg" />
 <br>
 
 <br>
