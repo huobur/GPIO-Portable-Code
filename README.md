@@ -40,9 +40,9 @@ Each of the above programs will be used to control the led circuit on both Raspb
 
 ####
 With the above configurations, I can simply access either of Raspberry Pi or Jetson Nano or both of through my PC in the following 3 methods:
-1. Through a commandline SSH;
-2. Through VSCode via Remote-SSH;
-3. Through TightVNC when absolutely needed.
+2. Through VSCode via Remote-SSH; (Fig. 5 in Appendix)
+1. Through a commandline SSH;   (Fig. 6 in Appendix)
+3. Through TightVNC when absolutely needed. (Fig. 7 in Appendix)
 
 ####
 
@@ -54,7 +54,7 @@ With the above configurations, I can simply access either of Raspberry Pi or Jet
 * Breadboard (x1)
 * Female-to-Male Depont Wire (x6)
 
-Note that the above components are for building two identical circuits for both Raspberry Pi and Jetson Nano systems as shown in Fig.1, you can also just build one circuit and manually switch to one system at a time. By using online free trial design tool (https://www.digikey.com/schemeit/project/), we have Fig. 2 to show the circuit diagram. Since this is very simple circuit, once we plug in all components on the breadboard, we can connect the three wires on each circuit to the same corresponding physical pins on the two systems: (if you just build one circuit, you can test your circuit and code with one system at a time). Since this is a fairly simple circuit, details are not going to be explained. Basically, we use the base of the transistor for our software program to control the switch on/off of the LED through a GPIO pin on the system board.
+Note that the above components are for building two identical circuits for both Raspberry Pi and Jetson Nano systems as shown in Fig.1, you can also just build one circuit and manually switch to one system at a time (Fig. 3 and Fig. 4 in Appendix). By using online free trial design tool (https://www.digikey.com/schemeit/project/), we have Fig. 2 to show the circuit diagram below. Since this is very simple circuit, once we plug in all components on the breadboard, we can connect the three wires on each circuit to the same corresponding physical pins on the two systems: (if you just build one circuit, you can test your circuit and code with one system at a time). Since this is a fairly simple circuit, details are not going to be explained. Basically, we use the base of the transistor for our software program to control the switch on/off of the LED through a GPIO pin on the system board.
 1. The female end of the wire with "5V" showing on the circuit diagram should be plugged in the pin 2 on the system board;
 2. The female end of the wire with "GND" showing on the circuit diagram should be plugged in the pin 6 on the system board;
 3. The female end of the wire with "To Pin 12" showing on the circuit diagram should be plugged in the pin 12 on the system board.
@@ -549,19 +549,19 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-Here is the bonus program, which is actually the one I used to test my programs and systems. It's useful to test pin or other thing step by step. You can run it by providing two parameters:
+Here is the bonus program, which is actually the one I used to test my programs and systems. It's useful to test pins or other things step by step. You can run it by providing two parameters:
 ```
 python switch.py <pin number> <1 or 0>
 ```
 
-I even use it to take the picture of Fig. 1 (turned both LEDs on)
-Also I found an inconsistence between RPi.GPIO on Raspberry Pi and Jetson Nano: once you turn the LED on and exit the program even after clean up, the LED on Jetson Nano stays on while the LED on Raspberry Pi turns off. Try it youself!
-I also noticed another issue: if one doesn't cleanup before exit, you'll get an error message or sometimes you even cannot continue running your program until you clean the system up! There is an easy way to use one of the statements in blink.sh, but this is for your homework to find it out if you really want to dive into it. 
+I even usec it to take the picture of Fig. 1 (turning both LEDs on)
+Also I found an inconsistency between RPi.GPIO on Raspberry Pi and Jetson Nano: once you turn the LED on and exit the program even after cleaning up, the LED on Jetson Nano stays on while the LED on Raspberry Pi turns off. Try it yourself!
+I also noticed another issue: if one doesn't clean up before exit, one will get an error message or sometimes one even cannot continue running one's program until one cleans the system up! There is an easy way to use one of the statements in blink.sh to fix it, but this is for your homework to find it out if you really want to dive into it. 
 
 ## Appendix - System Configuration Images
 <br>
 <h2>Fig. 3 Raspberry Pi</h2>
-<img height="600" width="600" src="RaspberryPi.jpg" />
+<img height="450" width="600" src="RaspberryPi.jpg" />
 <br>
 
 <br>
