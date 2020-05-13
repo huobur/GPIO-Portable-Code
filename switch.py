@@ -6,7 +6,7 @@
 # and this is compatible with RPi.GPIO
 # For Raspberry Pi, RPi.GPIO seems to be installed by default.
 #
-# Ping He 2020-05-011
+# Ping He 2020-05-012
 #
 
 # Both Raspberry Pi 4 and Jetson Nano can be supported
@@ -28,7 +28,22 @@ except ImportError:
     print ("Cannot locate RPi.GPIO module!")
     sys.exit(1)
 
+# Check to see if we have found the system we support
+def checkSystem(line):
+    if ( ('NVIDIA Jetson Nano' not in line) and ('Raspberry Pi 4' not in line) ): 
+        print ("The system is not supported by this program!")
+        sys.exit(1)
+
 def main():
+    # Exam the system model file
+    try:
+        with open('/proc/device-tree/model') as f:
+            for line in f:
+                checkSystem(line)
+                break
+    except Exception as error:
+        print ("The system is not supported by this program!")
+        sys.exit(1)
 
     # Check commandline inputs
     if ( len(sys.argv) < 3 ):
