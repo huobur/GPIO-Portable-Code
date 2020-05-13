@@ -14,7 +14,7 @@ Each of the above programs will be used to control the led circuit on both Raspb
 
 <br>
 <h2>Fig. 1 Two System Demo</h2>
-<img height="600" width="400" src="TwoSystems.jpg" />
+<img height="600" width="450" src="TwoSystems.jpg" />
 <br>
 
 ## 1. System configurations:
@@ -62,7 +62,7 @@ Note that the above components are for building two identical circuits for both 
 
 <br>
 <h2>Fig. 2 LED Circuit Diagram</h2>
-<img height="400" width="400" src="https://github.com/huobur/GPIO-Portable-Code/blob/Start/LEDcircuit.jpg" />
+<img height="600" width="368" src="https://github.com/huobur/GPIO-Portable-Code/blob/Start/LEDcircuit.jpg" />
 <br>
 
 # 3. Software Design
@@ -561,28 +561,28 @@ I also noticed another issue: if one doesn't cleanup before exit, you'll get an 
 ## Appendix - System Configuration Images
 <br>
 <h2>Fig. 3 Raspberry Pi</h2>
-<img height="600" width="400" src="RaspberryPi.jpg" />
+<img height="600" width="450" src="RaspberryPi.jpg" />
 <br>
 
 <br>
 <h2>Fig. 4 Jetson Nano</h2>
-<img height="600" width="400" src="JetsonNano.jpg" />
+<img height="600" width="450" src="JetsonNano.jpg" />
 <br>
 
 <br>
 <h2>Fig. 5 VCCode Access</h2>
-<img height="400" width="600" src="VSCode.jpg" />
+<img height="450" width="800" src="VSCode.jpg" />
 <br>
 
 
 <br>
 <h2>Fig. 6 Command Line Access</h2>
-<img height="400" width="600" src="ssh.jpg" />
+<img height="450" width="800" src="ssh.jpg" />
 <br>
 
 <br>
 <h2>Fig. 7 VNC Access</h2>
-<img height="400" width="600" src="VNC.jpg" />
+<img height="450" width="800" src="VNC.jpg" />
 <br>
 
 
